@@ -1,0 +1,21 @@
+# Secrets — never commit real credentials (see .env.example for the variable names)
+.env
+.env.*
+!.env.example
+
+# Local state: the notification-tracking database holds user handles and post URIs
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Logs may contain conversation text
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
